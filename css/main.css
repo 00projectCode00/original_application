@@ -20,9 +20,9 @@ header {
 /* 実装できていないリンク文字のスタイル */
 /* ==> オーバーレイ状態下での白文字の適用 */
 
-.navbar-nav {
-    width: 15%;
-}
+/* .navbar-nav {
+
+} */
 .nav-link {
     display: inline-block;
     margin-top: 30px;
