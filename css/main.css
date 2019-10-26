@@ -19,7 +19,12 @@ header {
 
 /* 実装できていないリンク文字のスタイル */
 /* ==> オーバーレイ状態下での白文字の適用 */
+
+.navbar-nav {
+    width: 15%;
+}
 .nav-link {
+    display: inline-block;
     margin-top: 30px;
     color: #ffffff;
     font-size: 18px;
@@ -46,31 +51,42 @@ header {
 }
 
 .overlayMenu {
-    width: 970px;
-    height: calc( 970px * 0.5890625 );
+    width: 100%;
+    height: 100%;
     position: fixed;
     top: 25px;
     left: 0;
     background-color: #000000;
     opacity: 0.3;
+    z-index: 3;
 }
 
-/* .hidden {
-    display: none;
+.overlay-inner {
+    width: 100%;
+    height: 100%;
+}
 
-} */
+.hidden {
+    display: none;
+}
+
+.nav-searchbar {
+    position: fixed;
+    top: 45px;
+    right: 80px;
+}
 
 /* ----- */
 /* main */
 /* ----- */
 main {
-    height: 1000px;
+    height: 2000px;
     background-color: #dedfdc;
 }
 /* ------------------ */
 /* slick-slider */
 /* ------------------ */
-/* .container {
+.container {
     margin: 0 auto;
     padding: 40px;
     width: 80%;
@@ -82,4 +98,4 @@ main {
     text-align: center;
     color: #419be0;
     background: #ffffff;
-} */
+}

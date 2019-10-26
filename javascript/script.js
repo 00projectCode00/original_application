@@ -1,8 +1,8 @@
 $(function(){
-  $('#menu-button').on('click', function(){
+  $("#menu-button").on("click", function(){
 
-    var $overlay = $('.overlayMenu');
-    var openClass = 'open';
+    var $overlay = $(".overlayMenu");
+    var openClass = "open";
 
     if( !$overlay.hasClass(openClass) ){
 
@@ -17,14 +17,19 @@ $(function(){
   });
 });
 
-$(function(){
-  $('.slick-list').slick({
-
-    accessibility: true,
-    autoplay: true,
-    autoplaySpeed: 1000,
-    dots: true,
-    fade: true,
-
-  });
+$(function() {
+    $(".overlayMenu").click(function(event) {
+        event.stopPropagation();
+    });
 });
+// $(function(){
+//   $('.slider').slick({
+//
+//     accessibility: true,
+//     autoplay: true,
+//     autoplaySpeed: 1000,
+//     dots: true,
+//     fade: true,
+//
+//   });
+// });
