@@ -28,7 +28,7 @@
         <a class="navbar-brand" href="#">Menu</a>
         <!-- 商品検索フォーム -->
         <form action="" method="GET" class="nav-searchbar" name="site-search" role="search">
-            <input type="search" placeholder="商品名を入力してください">
+            <input type="search" class="search-input"  size="30" placeholder="商品名を入力してください">
             <input type="submit" value="検索">
         </form>
         <!-- トグルメニュー -->
@@ -51,11 +51,10 @@
         <img id="top_image" src="images/top_image_large_custom.png" alt="La_mode_img">
     </div>
     <!-- メニュー展開時の影色のオーバーレイ -->
-    <div class="overlayMenu hidden">
+    <div class="overlayMenu hidden"></div>
         <!-- <div class="overlay-inner"> -->
         <!-- </div> -->
-    </div>
-
+    <div id="overlay" class="overlayMenu hidden"></div>
     <main>
         <section id="news">
             <!-- 背景画像の上にオーバーレイで情報を表示する -->

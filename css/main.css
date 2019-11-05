@@ -17,6 +17,12 @@ header {
     display: block;
 }
 
+.navbar-brand {
+    margin-left: 2vw;
+}
+.navbar-nav {
+    margin-left: 2vw;
+}
 /* 実装できていないリンク文字のスタイル */
 /* ==> オーバーレイ状態下での白文字の適用 */
 
@@ -70,6 +76,10 @@ header {
     display: none;
 }
 
+#overlay {
+    background-color: #ffffff;
+    opacity: 0.3;
+}
 .nav-searchbar {
     position: fixed;
     top: 33px;
@@ -172,8 +182,8 @@ main {
 /* -------------------*/
 
 #contact_us {
-    margin-top: 200px;
-    padding-bottom: 100px;
+    margin-top: 20vh;
+    padding-bottom: 20%;
 }
 
 .form-title > h5 {
@@ -190,12 +200,14 @@ select {
 
 .input_context {
     display: block;
-    height: 200px;
     width: 80%;
+    /* height: 200px; */
+    height: 50vh;
 }
 
 .form_box {
     width: 100vw;
     height: auto;
-    padding: 20px 50px 20px 150px;
+    /* padding: 20px 50px 20px 150px; */
+    padding: 10% 5% 10% 20%;
 }
