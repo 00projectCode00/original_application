@@ -26,12 +26,12 @@
     <!-- モバイル用toggle-menuとブラウザ用でレスポンシブ対応する -->
     <nav class="navbar_visible navbar navbar-expand-lg fixed-top navbar-light">
         <a class="navbar-brand" href="#">Menu</a>
-    <!-- 商品検索フォーム -->
+        <!-- 商品検索フォーム -->
         <form action="" method="GET" class="nav-searchbar" name="site-search" role="search">
-            <input type="search" value="商品名を入力してください">
+            <input type="search" placeholder="商品名を入力してください">
             <input type="submit" value="検索">
         </form>
-    <!-- トグルメニュー -->
+        <!-- トグルメニュー -->
         <button id="menu-button" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="ナビゲーションの切り替え">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,15 +40,15 @@
             <!-- nav > div > a で、listを使わずにリンクを並行表示 -->
             <div class="navbar-nav mr-auto">
                 <a class="nav-item nav-link" href="#news">お知らせ</a>
-                <a class="nav-item nav-link" href="#">商品を探す</a>
+                <a class="nav-item nav-link" href="#menu">商品を探す</a>
                 <a class="nav-item nav-link" href="#">買い物かご</a>
-                <a class="nav-item nav-link" href="#">よくある質問</a>
-                <a class="nav-item nav-link" href="#">利用規約</a>
+                <a class="nav-item nav-link" href="#terms_of_service">利用規約</a>
+                <a class="nav-item nav-link" href="#contact_us">お問い合わせ</a>
             </div>
         </div>
     </nav>
     <div>
-        <img id="top_image" src="images/top_image_custom.png" alt="La_mode_img">
+        <img id="top_image" src="images/top_image_large_custom.png" alt="La_mode_img">
     </div>
     <!-- メニュー展開時の影色のオーバーレイ -->
     <div class="overlayMenu hidden">
@@ -57,53 +57,347 @@
     </div>
 
     <main>
-
-        <!-- スライド式のお知らせを掲載 -->
-        <!-- <div id="news" class="slider-container">
-            <div class="slider slick-slide slick-list slide-track">
-                <div class="single-item">
-                    <div>
-                        <h3><a>1</a></h3>
-                    </div>
-                </div>
-                <div class="single-item">
-                    <div>
-                        <h3><a>2</a></h3>
-                    </div>
-                </div>
-                <div class="single-item">
-                    <div>
-                        <h3><a>3</a></h3>
-                    </div>
-                </div>
-                <div class="single-item">
-                    <div>
-                        <h3><a>4</a></h3>
-                    </div>
-                </div>
-                <div class="single-item">
-                    <div>
-                        <h3><a>5</a></h3>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
         <section id="news">
-            <article></article>
+            <!-- 背景画像の上にオーバーレイで情報を表示する -->
+            <!-- スクロール幅によって背景画像を切り替える -->
+            <article class="news-content">
+                <div id="autumn" class="content-list">
+                    <div class="overlay-news">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div id="autumn" class="content-list">
+                    <!-- オーバーレイ部分 -->
+                    <div class="overlay-news">
+                        <!-- photoshop で作成したコンテンツ部分をアップ -->
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div id="autumn" class="content-list">
+                    <div class="overlay-news">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div id="autumn" class="content-list">
+                    <div class="overlay-news">
+                        <img src="" alt="">
+                    </div>
+                </div>
+
+            </article>
         </section>
+
+        <section id="menu">
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <!-- <?php
+                // ここにデータベースから受け取るphp処理を記述
+                ?>
+                <! <li>タグはデータベースから受け取る $menu_item の数により自動的に増える -->
+                    <li class="menu-item">
+                        <div><img src="" alt="商品画像"></div>
+                    </li>
+                    <li class="menu-item">
+                        <div><img src="" alt="商品画像"></div>
+                    </li>
+                    <li class="menu-item">
+                        <div><img src="" alt="商品画像"></div>
+                    </li>
+                    <li class="menu-item">
+                        <div><img src="" alt="商品画像"></div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <section id="terms_of_service">
+                <div class="terms_container">
+                    <h5>利用規約</h5>
+                    <p>
+                        この利用規約（以下，「本規約」といいます。）は，＿＿＿＿＿（以下，「当社」といいます。）がこのウェブサイト上で提供するサービス（以下，「本サービス」といいます。）の利用条件を定めるものです。登録ユーザーの皆さま（以下，「ユーザー」といいます。）には，本規約に従って，本サービスをご利用いただきます。
+                    </p>
+                    <div class="terms-box">
+                        <h6>
+                            第1条（適用）
+                        </h6>
+                        <p>
+                            本規約は，ユーザーと当社との間の本サービスの利用に関わる一切の関係に適用されるものとします。
+                        </p>
+                        <p>
+                            当社は本サービスに関し，本規約のほか，ご利用にあたってのルール等，各種の定め（以下，「個別規定」といいます。）をすることがあります。これら個別規定はその名称のいかんに関わらず，本規約の一部を構成するものとします。
+                        </p>
+                        <p>
+                            本規約の規定が前条の個別規定の規定と矛盾する場合には，個別規定において特段の定めなき限り，個別規定の規定が優先されるものとします。
+                        </p>
+                    </div>
+                    <div class="terms-box">
+                        <h6>
+                            第2条（利用登録）
+                        </h6>
+                        <li class="terms-item">
+                            本サービスにおいては，登録希望者が本規約に同意の上，当社の定める方法によって利用登録を申請し，当社がこれを承認することによって，利用登録が完了するものとします。
+                        </li>
+                        <li class="terms-item">
+                            当社は，利用登録の申請者に以下の事由があると判断した場合，利用登録の申請を承認しないことがあり，その理由については一切の開示義務を負わないものとします。
+                        </li>
+                        <li class="terms-item">
+                            利用登録の申請に際して虚偽の事項を届け出た場合
+                        </li>
+                        <li class="terms-item">
+                            本規約に違反したことがある者からの申請である場合
+                        </li>
+                        <li class="terms-item">
+                            その他，当社が利用登録を相当でないと判断した場合
+                        </li>
+                    </div>
+                    <div class="terms-box">
+                        <h6>
+                            第3条（ユーザーIDおよびパスワードの管理）
+                        </h6>
+                        <p>
+                            ユーザーは，自己の責任において，本サービスのユーザーIDおよびパスワードを適切に管理するものとします。
+                        </p>
+                        <p>
+                            ユーザーは，いかなる場合にも，ユーザーIDおよびパスワードを第三者に譲渡または貸与し，もしくは第三者と共用することはできません。当社は，ユーザーIDとパスワードの組み合わせが登録情報と一致してログインされた場合には，そのユーザーIDを登録しているユーザー自身による利用とみなします。
+                        </p>
+                        <p>
+                            ユーザーID及びパスワードが第三者によって使用されたことによって生じた損害は，当社に故意又は重大な過失がある場合を除き，当社は一切の責任を負わないものとします。
+                        </p>
+                        <div class="terms-box">
+                            <h6>
+                                第4条（利用料金および支払方法）
+                            </h6>
+                            <p>
+                                ユーザーは，本サービスの有料部分の対価として，当社が別途定め，本ウェブサイトに表示する利用料金を，当社が指定する方法により支払うものとします。
+                            </p>
+                            <p>
+                                ユーザーが利用料金の支払を遅滞した場合には，ユーザーは年14．6％の割合による遅延損害金を支払うものとします。
+                            </p>
+                        </div>
+                        <div class="terms-box">
+                            <h6>
+                                第5条（禁止事項）
+                            </h6>
+                            <p>
+                                ユーザーは，本サービスの利用にあたり，以下の行為をしてはなりません。
+                            </p>
+                            <ul>
+                                <li class="terms-item">
+                                    法令または公序良俗に違反する行為
+                                </li>
+                                <li class="terms-item">
+                                    犯罪行為に関連する行為
+                                </li>
+                                <li class="terms-item">
+                                    本サービスの内容等，本サービスに含まれる著作権，商標権ほか知的財産権を侵害する行為
+                                </li>
+                                <li class="terms-item">
+                                    当社，ほかのユーザー，またはその他第三者のサーバーまたはネットワークの機能を破壊したり，妨害したりする行為
+                                </li>
+                                <li class="terms-item">
+                                    本サービスによって得られた情報を商業的に利用する行為
+                                </li>
+                                <li class="terms-item">
+                                    当社のサービスの運営を妨害するおそれのある行為
+                                </li>
+                                <li class="terms-item">
+                                    不正アクセスをし，またはこれを試みる行為
+                                </li>
+                                <li class="terms-item">
+                                    他のユーザーに関する個人情報等を収集または蓄積する行為
+                                </li>
+                                <li class="terms-item">
+                                    不正な目的を持って本サービスを利用する行為
+                                </li>
+                                <li class="terms-item">
+                                    本サービスの他のユーザーまたはその他の第三者に不利益，損害，不快感を与える行為
+                                </li>
+                                <li class="terms-item">
+                                    他のユーザーに成りすます行為
+                                </li>
+                                <li class="terms-item">
+                                    当社が許諾しない本サービス上での宣伝，広告，勧誘，または営業行為
+                                </li>
+                                <li class="terms-item">
+                                    面識のない異性との出会いを目的とした行為
+                                </li>
+                                <li class="terms-item">
+                                    当社のサービスに関連して，反社会的勢力に対して直接または間接に利益を供与する行為
+                                </li>
+                                <li class="terms-item">
+                                    その他，当社が不適切と判断する行為
+                                </li>
+                        </div>
+                        <div class="terms-box">
+                            <h6>
+                                第6条（本サービスの提供の停止等）
+                            </h6>
+                            <p>
+                                当社は，以下のいずれかの事由があると判断した場合，ユーザーに事前に通知することなく本サービスの全部または一部の提供を停止または中断することができるものとします。
+                            </p>
+                            <li class="terms-item">
+                                本サービスにかかるコンピュータシステムの保守点検または更新を行う場合
+                            </li>
+                            <li class="terms-item">
+                                地震，落雷，火災，停電または天災などの不可抗力により，本サービスの提供が困難となった場合
+                            </li>
+                            <li class="terms-item">
+                                コンピュータまたは通信回線等が事故により停止した場合
+                            </li>
+                            <li class="terms-item">
+                                その他，当社が本サービスの提供が困難と判断した場合
+                            </li>
+                            <p>
+                                当社は，本サービスの提供の停止または中断により，ユーザーまたは第三者が被ったいかなる不利益または損害についても，一切の責任を負わないものとします。
+                            </p>
+                        </div>
+                        <div class="terms-box">
+                            <h6>
+                                第7条（利用制限および登録抹消）
+                            </h6>
+                            <p>
+                                当社は，ユーザーが以下のいずれかに該当する場合には，事前の通知なく，ユーザーに対して，本サービスの全部もしくは一部の利用を制限し，またはユーザーとしての登録を抹消することができるものとします。
+                            </p>
+                            <ul>
+                                <li class="terms-item">
+                                    本規約のいずれかの条項に違反した場合
+                                </li>
+                                <li class="terms-item">
+                                    登録事項に虚偽の事実があることが判明した場合
+                                </li>
+                                <li class="terms-item">
+                                    料金等の支払債務の不履行があった場合
+                                </li>
+                                <li class="terms-item">
+                                    当社からの連絡に対し，一定期間返答がない場合
+                                </li>
+                                <li class="terms-item">
+                                    本サービスについて，最終の利用から一定期間利用がない場合
+                                </li>
+                                <li class="terms-item">
+                                    その他，当社が本サービスの利用を適当でないと判断した場合
+                                </li>
+                                <p>
+                                    当社は，本条に基づき当社が行った行為によりユーザーに生じた損害について，一切の責任を負いません。
+                                </p>
+                            </ul>
+                        </div>
+                        <div class="terms-box">
+                            <h6>
+                                第8条（退会）
+                            </h6>
+                            <p>
+                                ユーザーは，当社の定める退会手続により，本サービスから退会できるものとします。
+                            </p>
+                        </div>
+                        <div class="terms-box">
+                            <h6>
+                                第9条（保証の否認および免責事項）
+                            </h6>
+                            <p>
+                                当社は，本サービスに事実上または法律上の瑕疵（安全性，信頼性，正確性，完全性，有効性，特定の目的への適合性，セキュリティなどに関する欠陥，エラーやバグ，権利侵害などを含みます。）がないことを明示的にも黙示的にも保証しておりません。
+                            </p>
+                            <p>
+                                当社は，本サービスに起因してユーザーに生じたあらゆる損害について一切の責任を負いません。ただし，本サービスに関する当社とユーザーとの間の契約（本規約を含みます。）が消費者契約法に定める消費者契約となる場合，この免責規定は適用されません。
+                            </p>
+                            <p>
+                                前項ただし書に定める場合であっても，当社は，当社の過失（重過失を除きます。）による債務不履行または不法行為によりユーザーに生じた損害のうち特別な事情から生じた損害（当社またはユーザーが損害発生につき予見し，または予見し得た場合を含みます。）について一切の責任を負いません。また，当社の過失（重過失を除きます。）による債務不履行または不法行為によりユーザーに生じた損害の賠償は，ユーザーから当該損害が発生した月に受領した利用料の額を上限とします。
+                            </p>
+                            <p>
+                                当社は，本サービスに関して，ユーザーと他のユーザーまたは第三者との間において生じた取引，連絡または紛争等について一切責任を負いません。
+                            </p>
+                        </div>
+                        <div class="terms-box">
+                            <h6>
+                                第10条（サービス内容の変更等）
+                            </h6>
+                            <p>
+                                当社は，ユーザーに通知することなく，本サービスの内容を変更しまたは本サービスの提供を中止することができるものとし，これによってユーザーに生じた損害について一切の責任を負いません。
+                            </p>
+                        </div>
+                        <div class="terms-box">
+                            <h6>
+                                第11条（利用規約の変更）
+                            </h6>
+                            <p>
+                                当社は，必要と判断した場合には，ユーザーに通知することなくいつでも本規約を変更することができるものとします。なお，本規約の変更後，本サービスの利用を開始した場合には，当該ユーザーは変更後の規約に同意したものとみなします。
+                            </p>
+                        </div>
+                        <div class="terms-box">
+                            <h6>
+                                第12条（個人情報の取扱い）
+                            </h6>
+                            <p>
+                                当社は，本サービスの利用によって取得する個人情報については，当社「プライバシーポリシー」に従い適切に取り扱うものとします。
+                            </p>
+                        </div>
+                        <div class="terms-box">
+                            <h6>
+                                第13条（通知または連絡）
+                            </h6>
+                            <p>
+                                ユーザーと当社との間の通知または連絡は，当社の定める方法によって行うものとします。当社は,ユーザーから,当社が別途定める方式に従った変更届け出がない限り,現在登録されている連絡先が有効なものとみなして当該連絡先へ通知または連絡を行い,これらは,発信時にユーザーへ到達したものとみなします。
+                            </p>
+                        </div>
+                        <div class="terms-box">
+                            <h6>
+                                第14条（権利義務の譲渡の禁止）
+                            </h6>
+                            <p>
+                                ユーザーは，当社の書面による事前の承諾なく，利用契約上の地位または本規約に基づく権利もしくは義務を第三者に譲渡し，または担保に供することはできません。
+                            </p>
+                        </div>
+                        <div class="terms-box">
+                            <h6>
+                                第15条（準拠法・裁判管轄）
+                            </h6>
+                            <p>
+                                本規約の解釈にあたっては，日本法を準拠法とします。
+                            </p>
+                            <p>
+                                本サービスに関して紛争が生じた場合には，当社の本店所在地を管轄する裁判所を専属的合意管轄とします。
+                            </p>
+                            <p>
+                                以上
+                            </p>
+                        </div>
+                    </div>
+            </section>
+
+            <section id="contact_us">
+                <div class="form-title">
+                    <h5>お問い合わせフォーム</h5>
+                </div>
+                <div class="form_box">
+                    <form action="http://La_mode.com" method="POST">
+                        <select>
+                            <!-- ご用件の種類を選択表示 -->
+                            <option>商品に関するご質問</option>
+                            <option>お支払方法について</option>
+                            <option>配送方法について</option>
+                            <option>その他のご質問</option>
+                        </select>
+                        <input class="input_name" type="text" name="user_name" placeholder="お名前">
+                        <!-- javascript で文字数カウント -->
+                        <textarea class="input_context" type="text" name="context" placeholder="200字以内でご記入ください。" maxlength="200" required></textarea>
+                        <input type="submit" value="送信する">
+                    </form>
+                </div>
+            </section>
+
 
     </main>
     <footer>
+        2019 &copy;La Mode.com
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- slick.min.js -->
+    <!-- slick.min.js -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-     <script src="slick.min.js" type="text/javascript"></script>
+    <script src="slick.min.js" type="text/javascript"></script>
     <script src="javascript/script.js"></script>
 </body>
 

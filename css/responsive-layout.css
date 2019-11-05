@@ -25,7 +25,7 @@
     .container {
                  padding: 0px;
     }
-   
+
 }
 @media screen and (min-width: 240px) and (max-width: 359px) {
     .nav-link { margin: 0 0 0 0; }
@@ -36,7 +36,7 @@
                       width: auto;
                       height: auto;
                     }
-   
+
 }
 @media screen and (min-width: 360px) and (max-width: 479px) {
     .nav-link { margin: 0 0 0 0; }
@@ -47,7 +47,7 @@
                       width: auto;
                       height: auto;
                     }
-    
+
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
     .nav-link { margin: 0 0 0 0; }
@@ -58,7 +58,7 @@
                       width: auto;
                       height: auto;
                     }
-    
+
 }
 @media screen and (min-width: 768px) and (max-width: 969px) {
     .nav-link { margin-top: 20px; }
